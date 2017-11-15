@@ -41,7 +41,7 @@ To provide a practical example of RadGrid binding to such an array, we can use t
 ````JavaScript
 function pageLoad() {
   var data = [{ "ID": 1, "Text": "Text1" }, { "ID": 2, "Text": "Text2"}];
-  var mtv = $find("RadGrid1").get_masterTableView(); mtv.set_dataSource(data); mtv.dataBind();
+  var mtv = $find("<%= RadGrid1.ClientID %>").get_masterTableView(); mtv.set_dataSource(data); mtv.dataBind();
 }
 ````
 
